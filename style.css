@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Patrick+Hand&display=swap');
+
+body {
+    font-family: 'Fredoka One', cursive;
+}
+
+.page-container {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instrution-container {
+    font-size: 2.2rem;
+}
+
+.question-container {
+    font-size: 1.5rem;
+    padding: 3.5rem 0;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.answer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.answer-input {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0.2rem 0.5rem;
+    border: solid rgb(178, 178, 178) 1px;
+    border-radius: 6px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.answer-button {
+    margin-left: 0.5rem;
+    border-radius: 6px;
+    border: solid rgb(178, 178, 178) 1px;
+    background-color: rgb(127, 200, 19);
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: 'Fredoka One', cursive;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.message {
+    position: absolute;
+    margin-top: 0.5rem;
+}
+
+.correct {
+    color: rgb(27, 170, 27);
+}
+
+.incorrect {
+    color: rgb(228, 0, 0);
+}
