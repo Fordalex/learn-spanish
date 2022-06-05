@@ -9,9 +9,30 @@ Http.open("GET", url);
 Http.send();
 
 Http.onreadystatechange = (e) => {
-    allQuestions = JSON.parse(Http.responseText);
-    generateQuestion();
+    if (!allQuestions) {
+        allQuestions = JSON.parse(Http.responseText);
+        console.log(Http.status)
+        generateQuestion();
+        showQuestionsOnModel();
+    }
 }
+
+// Display all the questions in the model
+
+const modelBody = document.getElementById("modelBody");
+
+function showQuestionsOnModel() {
+    for (let i = 0; i < allQuestions.length; i++) {
+        console.log(allQuestions[i])
+        let span = document.createElement('span');
+        span.innerHTML = allQuestions[i]["english"];
+        let checkBox = document.createElement('input');
+        modelBody.appendChild(span);
+    }
+}
+
+
+// Display the question
 
 let randomQuestion;
 let englishOrSpanishQuestion;
