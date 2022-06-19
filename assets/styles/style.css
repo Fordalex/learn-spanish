@@ -100,3 +100,30 @@ body {
 .incorrect {
     color: rgb(228, 0, 0);
 }
+
+table {
+    border: solid grey 1px;
+    border-spacing: 0;
+}
+
+table td,
+table th {
+    border: solid grey 1px;
+    padding: 0.5rem;
+    width: 100px;
+}
+
+table th:nth-child(even),
+table td:nth-child(even) {
+    background-color: rgb(240, 240, 240);
+}
+
+table th:nth-child(4),
+table td:nth-child(4) {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+[colspan="7"] {
+    background-color: rgb(255, 186, 95);
+}
